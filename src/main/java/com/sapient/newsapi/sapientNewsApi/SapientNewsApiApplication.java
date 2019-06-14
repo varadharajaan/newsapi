@@ -21,9 +21,10 @@ public class SapientNewsApiApplication extends SpringBootServletInitializer{
 		return builder.sources(SapientNewsApiApplication.class);
 	}
 	
-	@GetMapping("/")
-	public String firstPage() {
-		return "Hello Sapient application successfully deployed and started...";	
-		
-	}
+	/*
+	 * @GetMapping("/") public String firstPage() { return
+	 * "Hello Sapient application successfully deployed and started...";
+	 * 
+	 * }
+	 */
 }
