@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
@@ -20,7 +21,7 @@ public class SapientNewsApiApplication extends SpringBootServletInitializer{
 		return builder.sources(SapientNewsApiApplication.class);
 	}
 	
-	@RequestMapping("/")
+	@GetMapping("/")
 	public String firstPage() {
 		return "Hello Sapient application successfully deployed and started...";	
 		
